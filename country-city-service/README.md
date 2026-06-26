@@ -58,20 +58,12 @@ To build a Docker image and run the application inside a container:
    mvn clean package -DskipTests
    ```
 
-2. **Create a `Dockerfile`** in the project root:
-   ```dockerfile
-   FROM eclipse-temurin:21-jre-alpine
-   VOLUME /tmp
-   COPY target/country-city-service-0.0.1-SNAPSHOT.jar app.jar
-   ENTRYPOINT ["java","-jar","/app.jar"]
-   ```
-
-3. **Build the Docker Image**:
+3. **Build the Docker Image** from the root directory:
    ```bash
    docker build -t country-city-service .
    ```
 
-4. **Run the Container**:
+4. **Run the Container** from the root directory:
    ```bash
    docker run -p 8080:8080 country-city-service
    ```
