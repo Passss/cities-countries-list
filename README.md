@@ -1,7 +1,7 @@
 # Country and City Backend Service
 
 A clean-architecture Spring Boot backend service for managing countries and cities. Only in memory
-H2 datastore and is pre-populated with some sample data at application start-up. A postman collection is also provided with the endpoints with testdata.
+H2 datastore and is pre-populated with some sample data at application start-up. A postman collection is also provided with the endpoints with testdata. Also there are maven wrappers in case one has not installed maven locally.
 
 ## Architecture
 
