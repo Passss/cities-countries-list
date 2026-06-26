@@ -1,0 +1,146 @@
+{
+  "info": {
+    "_postman_id": "50dda89f-475a-43e2-b5df-31bf567e47f3",
+    "name": "city-country-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5167701",
+    "_collection_link": "https://go.postman.co/collection/5167701-50dda89f-475a-43e2-b5df-31bf567e47f3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAllCountries",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/countries",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "countries"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllCitiesGivenCountryId",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/countries/1/cities",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "countries",
+            "1",
+            "cities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllCitiesPagedGivenCountryId",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/countries/1/cities?page=1&size=1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "countries",
+            "1",
+            "cities"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "size",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetCityDetailsGivenCityId",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/cities/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "cities",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CreateCountry",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/countries/Zambia",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "countries",
+            "Zambia"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CreateCityGivenCountryId",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Chennai\",\r\n  \"population\": 10101010,\r\n  \"zipCode\": \"600001\",\r\n  \"description\": \"Southern city\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/countries/1/cities",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "countries",
+            "1",
+            "cities"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
