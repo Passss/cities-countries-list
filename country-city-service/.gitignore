@@ -1,0 +1,52 @@
+# =========================================================================
+# Build Tools (Maven & Gradle)
+# =========================================================================
+target/
+build/
+.gradle/
+out/
+bin/
+dependency-reduced-pom.xml
+
+# =========================================================================
+# Configuration and Logs
+# =========================================================================
+*.log
+logs/
+.env
+.env.*
+
+# =========================================================================
+# IDEs and Text Editors
+# =========================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse / Spring Tool Suite (STS)
+.metadata/
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# Visual Studio Code
+.vscode/
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+
+# =========================================================================
+# System Files
+# =========================================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
